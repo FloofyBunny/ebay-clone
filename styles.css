@@ -28,6 +28,10 @@ nav a {
     padding: 5px 15px;
 }
 
+nav a:hover {
+    cursor: pointer;
+}
+
 #cart, #bell {
     padding: 0 15px;
 }
@@ -113,6 +117,10 @@ header {
     margin-right: auto;
 }
 
+#button-search:hover {
+    cursor: pointer;
+}
+
 #search input::placeholder {
     color: #BBBBBB;
 }
@@ -129,6 +137,7 @@ header {
 
 #categories-dropdown:hover {
     background-color: #DDDDDD;
+    cursor: pointer;
 }
 
 /*logo*/
@@ -142,6 +151,10 @@ header {
     padding: 0;
     margin-left: 5%;
 
+}
+
+#logo:hover {
+    cursor: pointer;
 }
 
 #logo span {
