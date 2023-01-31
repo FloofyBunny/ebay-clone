@@ -174,3 +174,53 @@ header {
 }
 
 /*---categories nav---*/
+
+#nav-categories {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline ;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 5px 5px;
+    height: 30px
+}
+
+#nav-categories a {
+    height: 25px;
+    padding: 0;
+
+}
+
+#nav-categories a:hover {
+    position: relative;
+    animation-name: standout;
+    animation-duration: .2s;
+    animation-fill-mode: both;
+    cursor: pointer;
+}
+
+@keyframes standout {
+    from {
+        top: 0px;
+        right: 0px;
+
+        }
+    to {
+        top: -2px;
+        right: -2px;
+        text-shadow: -2px 2px 2px #BBBBBB;
+        }
+    
+}
+
+@media only screen and (max-width: 1300px) {
+    #nav-categories a:nth-child(4),
+    #nav-categories a:nth-child(7),
+    #nav-categories a:nth-child(10),
+    #nav-categories a:nth-child(11) {
+        display: none;
+    }
+
+
+
+}
