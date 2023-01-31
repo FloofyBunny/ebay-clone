@@ -161,7 +161,7 @@ header {
 
 #logo span {
     display: inline-block;
-    -webkit-transform: scale(1.0, 1);
+    -webkit-transform: scale(1.5, 1);
     -moz-transform:scale(1.5, 1.0);
     -ms-transform:scale(1.5, 1.0);
     -o-transform:scale(1.5, 1.0);
@@ -240,3 +240,40 @@ header {
 
 
 }
+
+/*main*/
+.product-list h1 {
+    max-width: 1300px;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+#geschenkideen {
+    list-style-type: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: auto;
+    padding: 0;
+}
+
+.image-product {
+    width: 200px;
+    height: 200px;
+    object-fit:cover;
+}
+
+li:first-child img {
+    object-position: 100% 20%;
+}
+
+li:nth-child(2) img {
+    object-position: 100% 50%;
+}
+
+li:nth-child(6) img {
+    object-position: 100% 10%;
+}
+
+
