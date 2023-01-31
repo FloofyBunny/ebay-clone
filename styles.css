@@ -30,6 +30,7 @@ nav a {
 
 nav a:hover {
     cursor: pointer;
+    background-color: #DDDDDD;
 }
 
 #cart, #bell {
@@ -119,6 +120,7 @@ header {
 
 #button-search:hover {
     cursor: pointer;
+    background-color: rgb(20, 110, 201);
 }
 
 #search input::placeholder {
@@ -207,8 +209,9 @@ header {
 #nav-categories a:hover {
     position: relative;
     animation-name: standout;
-    animation-duration: .2s;
+    animation-duration: .1s;
     animation-fill-mode: both;
+    animation-timing-function: ease-in;
     cursor: pointer;
 }
 
