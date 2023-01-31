@@ -8,6 +8,11 @@ body {
     padding: 0;
 }
 
+#bell span, #cart span {
+    position: relative;
+    top: 3px;
+}
+
 nav {
     overflow: hidden;    
     border-bottom: 1px solid #BBBBBB;
@@ -48,8 +53,6 @@ nav a {
     'wght' 400,
     'GRAD' 0,
     'opsz' 1; 
-    position: relative;
-    top: 3px;
   }
 
 
@@ -61,31 +64,31 @@ header {
     max-width: 1300px;
     margin: auto;
     border-bottom: solid 1px #BBBBBB;
-}
-
-header div {
-    float: left;
-    padding: 20px 50px;
+    display: flex;
+    height: 100px;
+    align-items: center;
 }
 
 #search {
+
     border: solid 2px black;
     padding: 0;
     width: 50%;
-    position: relative;
-    top: 30px;
-    left: calc(40% - 25%);
+    height: 50px;
+    margin-left: 5%;
+    margin-right: 5px;
+    float: left;
+    display: flex;
+    align-items: center;
+    
 }
 
 #search input {
     width:70%;
-    height: 60px;
+    height: 30px;
     font-size: 1.2em;
     color:black;
     border: none;
-    margin-left: 15px;
-
-
 }
 
 #search input:focus {
@@ -93,22 +96,18 @@ header div {
 }
 
 #magnification-glass {
-    position: relative;
-    top: 5px;
-    left: 15px;
+    margin: 0 15px;
 }
 
 #button-search {
-    display: inline-block;
-    position: relative;
-    top: 30px;
-    left: calc(40% - 25% + 10px);
-    padding: 21px;
     font-size: 1.2em;
     width: 15%;
+    height: 50px;
     border: none;
     background-color: dodgerblue;
     color: white;
+    float: left;
+    margin-right: auto;
 }
 
 #search input::placeholder {
@@ -122,20 +121,23 @@ header div {
 }
 
 #logo {
-    position: relative;
-    left: 5%;
-    margin-left: 1em;
     font-size: 1.5em;
     text-align: center;
     display: inline-block;
-    letter-spacing: -.3em;
+    letter-spacing: .1em;
     text-transform: full-width;
-    -webkit-transform: scale(1.5, 1);
+    padding: 0;
+    margin-left: 5%;
+
+}
+
+#logo span {
+    display: inline-block;
+    -webkit-transform: scale(1.0, 1);
     -moz-transform:scale(1.5, 1.0);
     -ms-transform:scale(1.5, 1.0);
     -o-transform:scale(1.5, 1.0);
     transform:scale(1.5, 1.0);
-    padding: 0px;
 }
 
 #logo span:nth-child(1) {
@@ -153,3 +155,9 @@ header div {
 #logo span:nth-child(4) {
     color: rgb(135, 183, 50);
 }
+
+#categories-dropdown {
+    margin: 0;
+}
+
+/*---categories nav---*/
