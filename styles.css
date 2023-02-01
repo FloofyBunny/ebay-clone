@@ -283,6 +283,10 @@ li .right:hover {
     object-fit:cover;
 }
 
+.image-product img {
+    cursor: pointer;
+}
+
 li:first-child img {
     object-position: 100% 20%;
 }
@@ -348,11 +352,22 @@ li:nth-child(6) img {
 #wow li:nth-child(2) img {
     object-position: 100% 100%;
 }
-
-#wow li:nth-child(6) img {
-    object-position: 100% 10%;
+#wow li:nth-child(4) img {
+    transform: rotateZ(-90deg);
 }
 
+#wow li:nth-child(5) img {
+    transform: rotateZ(-90deg);
+}
+
+#wow li:nth-child(6) img {
+    object-position: 100% 100%;
+}
+
+/*Kracher*/
+#kracher li:nth-child(4) img {
+    transform: rotateZ(-90deg);
+}
 /*Footer*/
 
 hr {
