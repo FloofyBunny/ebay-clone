@@ -242,13 +242,16 @@ header {
 }
 
 /*main*/
+ main {
+    padding: 20px;
+ }
 .product-list h1 {
     max-width: 1300px;
     margin: auto;
     padding: 20px 0px;
 }
 
-#geschenkideen {
+.product-list ul {
     list-style-type: none;
     font-weight: bold;
     display: flex;
@@ -276,4 +279,60 @@ li:nth-child(6) img {
     object-position: 100% 10%;
 }
 
+/*advert*/
+#advert {
+    background-color: rgb(241, 174, 46);
+    color: rgb(91, 43, 19);
+    padding: 20px;
+    max-width: 1300px;
+    margin: auto;
+}
 
+#advert h1 {
+    margin: 0;
+}
+
+#advert div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#advert p {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+}
+
+#advert a {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    padding: 15px;
+    border: solid 2px rgb(91, 43, 19);
+    font-weight: bold;
+}
+
+#advert a:hover {
+    background-color: rgb(135, 64, 29);
+    color: rgb(241, 174, 46);
+    border-color: rgb(241, 174, 46);
+}
+
+/*wow*/
+#wow {
+    color: rgb(232, 2, 2);
+}
+
+#wow li:first-child img {
+    object-position: 30% 0%;;
+}
+
+#wow li:nth-child(2) img {
+    object-position: 100% 100%;
+}
+
+#wow li:nth-child(6) img {
+    object-position: 100% 10%;
+}
