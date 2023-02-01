@@ -242,6 +242,21 @@ header {
 }
 
 /*main*/
+.right {
+    text-align: right;
+}
+
+li .right {
+    color: #777777;
+    font-size: smaller;
+    font-weight: bold;
+}
+
+li .right:hover {
+    text-decoration: underline;
+}
+
+
  main {
     padding: 0 20px;
  }
