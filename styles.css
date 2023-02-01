@@ -382,6 +382,11 @@ footer p a:hover {
     color: black;
 }
 
+footer a {
+    color:#777777;
+    text-decoration: none;
+}
+
 footer h3:hover, footer li:hover {
     cursor: pointer;
     text-decoration: underline;
