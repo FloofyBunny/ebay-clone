@@ -243,11 +243,12 @@ header {
 
 /*main*/
  main {
-    padding: 20px;
+    padding: 0 20px;
  }
 .product-list h1 {
     max-width: 1300px;
     margin: auto;
+    margin-top: 30px;
     padding: 20px 0px;
 }
 
@@ -306,7 +307,7 @@ li:nth-child(6) img {
 }
 
 #advert a {
-    display: inline-block;
+    float: right;
     position: relative;
     top: 5px;
     padding: 15px;
@@ -335,4 +336,53 @@ li:nth-child(6) img {
 
 #wow li:nth-child(6) img {
     object-position: 100% 10%;
+}
+
+/*Footer*/
+
+hr {
+    border: none;
+    border-bottom: 1px solid #BBBBBB;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    justify-content: end;
+    align-content: center;
+    color: #777777;
+    max-width: 1300px;
+    font-size: .9em;
+    margin: auto;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer li {
+    margin: 10px 0;
+}
+
+footer h3 {
+    margin-left: 40px;
+}
+
+footer p {
+    font-size: .8em;
+    grid-column: 1/6;
+    margin: 40px auto;
+}
+
+footer p a {
+    text-decoration: underline;
+}
+
+footer p a:hover {
+    color: black;
+}
+
+footer h3:hover, footer li:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
