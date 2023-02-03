@@ -326,11 +326,13 @@ li .right:hover {
     background-color: rgba(239, 252, 255, 90%);
     border-radius: 100%;
     padding: 5px;
+    
 }
 
 .arrow-right:hover , .arrow-left:hover {
     background-color: rgba(70, 74, 75, 0.9);
     color: white;
+    cursor: pointer;
 
 }
 
