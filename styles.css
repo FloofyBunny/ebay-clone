@@ -268,7 +268,13 @@ li .right:hover {
     padding: 20px 0px;
 }
 
+.product-list ul::-webkit-scrollbar {
+    display: none;
+}
+
 .product-list ul {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     overflow-x: auto;
     list-style-type: none;
     font-weight: bold;
@@ -291,6 +297,40 @@ li .right:hover {
 
 .image-product img {
     cursor: pointer;
+}
+
+.product-list {
+    position: relative;
+    max-width: 1300px;
+    margin: auto;
+    z-index: 0;
+}
+
+.arrow-right {
+    position: absolute;
+    right: 20px;
+    top: 48%;
+    z-index: 1;
+}
+
+.arrow-left {
+    position: absolute;
+    left: 20px;
+    top: 48%;
+    z-index: 1;
+}
+
+
+.arrow-right, .arrow-left {
+    background-color: rgba(239, 252, 255, 90%);
+    border-radius: 100%;
+    padding: 5px;
+}
+
+.arrow-right:hover , .arrow-left:hover {
+    background-color: rgba(70, 74, 75, 0.9);
+    color: white;
+
 }
 
 /*Geschenk*/
@@ -349,12 +389,12 @@ li:nth-child(6) img {
 }
 
 /*wow*/
-#wow {
+#wow p {
     color: rgb(232, 2, 2);
 }
 
 #wow li:first-child img {
-    object-position: 30% 0%;;
+    object-position: 30% 0%;
 }
 
 #wow li:nth-child(2) img {

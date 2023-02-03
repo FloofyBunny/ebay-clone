@@ -11,6 +11,7 @@
     <title>
         eBuy - Ebay Klon
     </title>
+    
 </head>
 <body>
     <nav>
@@ -70,6 +71,12 @@
     <main>
         <div id="products">
             <div class="product-list">
+                <span id="le" class="material-symbols-outlined arrow-left" onclick="scrollb('geschenkideen', 'left')">
+                    arrow_back
+                </span>
+                <span id="ri" class="material-symbols-outlined arrow-right" onclick="scrollb('geschenkideen', 'right')">
+                    arrow_forward
+                </span>
                 <h1>Geschenkideen</h1>
                 <ul id="geschenkideen">
                     <li>
@@ -111,8 +118,14 @@
                     
                 </div>
             </div>
-            <div id="products">
+            
                 <div class="product-list">
+                    <span class="material-symbols-outlined arrow-left" onclick="scrollb('wow', 'left')">
+                        arrow_back
+                    </span>
+                    <span class="material-symbols-outlined arrow-right" onclick="scrollb('wow', 'right')">
+                        arrow_forward
+                    </span>
                     <h1>WOW! Des Tages!</h1>
                     <ul id="wow">
                         <li>
@@ -141,9 +154,15 @@
                         </li>
                     </ul>
                 </div>
-        </div>
-        <div id="products">
+        
+        
             <div class="product-list">
+                <span class="material-symbols-outlined arrow-left"onclick="scrollb('kracher', 'left')">
+                    arrow_back
+                </span>
+                <span class="material-symbols-outlined arrow-right" onclick="scrollb('kracher', 'right')">
+                    arrow_forward
+                </span>
                 <h1>Kracher Angebote!</h1>
                 <ul id="kracher">
                     <li>
@@ -247,5 +266,43 @@
             Copyright &#169; 1995-2023 eBuy Inc. Alle Rechte vorbehalten. <a>eBuy-AGB</a>, <a>Datenschutzerklärung</a>, <a>Nutzungsbedingungen für die Zahlungsabwicklung</a>, Erklärung zur Verwendung von <a>Cookies</a> und <a>AdChoice</a>
         </p>
     </footer>
+    <script>
+        document.querySelector(".arrow-left:nth-child(1)").oncl
+        document.querySelector(".arrow-left:nth-child(1)").addEventListener(
+        "click", scrollb("geschenkideen", "left")
+        );
+
+        document.querySelector(".arrow-left:nth-child(1)").addEventListener(
+        "click", scrollb("geschenkideen", "right")
+        );
+
+
+        function scrollb(list, direction) {
+            let scrollAmount = 0;
+
+            let distance = 0;
+            let screenwidth = window.screen.width;
+            if (screenwidth <= 1300) {
+                distance = screenwidth;
+            } else {
+                distance = 1300;
+            }
+            let step = distance/50;
+            let time = 5;
+            e = document.getElementById(list)
+            let slideTimer = setInterval(function (){
+                if(direction == "right"){    
+                    e.scrollLeft += step;
+                } else {
+                    e.scrollLeft -= step;
+                }
+                scrollAmount += step;
+                if(scrollAmount >= distance){
+                    window.clearInterval(slideTimer);
+                }
+            }, time);
+            
+        }
+    </script>
 </body>
 </html>
